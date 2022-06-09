@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohouse - Contacto</title>
+    <link rel="shortcut icon" href="../imagenes/Logo icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="ancho">
+            <div class="logo">
+                <h1 class="titulo"><a href="index.html">BOHOUSE</a></h1>
+            </div>
+            <nav id="menu">
+                <ul class="ir">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="producto.html">Productos</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main_contacto">
+        <h1>Contactanos</h1>
+        <form action="enviar.php" method="get" enctype="text/plain">
+            <div>
+                <select name="pais" id="áis">
+                    <option value="1">Córdoba</option>
+                    <option value="2">Buenos Aires</option>
+                    <option value="3">Mendoza</option>
+                </select>
+            </div>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com">
+            </div>
+            <div>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Ingrese su consulta."></textarea>
+            </div>
+            <div class="promo">
+                <label for="ofertas">Deseo recibir promociones</label>
+                <input type="radio" name="ofertas" value="1"> Si
+                <input type="radio" name="ofertas" value="2"> No
+
+            </div>
+            <input type="submit" value="Enviar consulta">
+        </form>
+    </main>
+    <footer>
+        ¡Gracias por elegirnos!
+    </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+header{
+    width: 100%;
+    background: #000000; 
+    height: 70px;
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    margin: auto
+}
+
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.logo .titulo a{
+    color: rgb(205, 190, 120);
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+#menu{ 
+    width: 70%;
+    height: 70px;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+#menu .ir li{
+    display: inline-block;
+}
+
+#menu .ir li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+#menu .ir li a:hover{ /* Efecto para titulos de menú */
+    color: #444;
+}
+
+footer{ 
+    width: 100%;
+    background: #000000; 
+    height: 70px;
+    color: rgb(205, 190, 120);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#menu .ir li ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .ir li ul{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+#menu .ir li:hover ul{
+    display: block;
+    justify-content: column;
+}
+
+#menu .ir li:hover ul a{
+    font-size: 25px;
+    text-align: left;    
+}
+
+body{
+    background-color: rgba(49, 49, 49, 0.895);
+}
+
+/* Main */
+.flex-container{
+    display: grid;
+    padding: 20px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "img texto";
+}
+
+.parrafo{
+    grid-area: texto;
+}
+
+.parrafo p{
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.imagen{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    grid-area: img;
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1100px){
+    .flex-container{
+        display: grid;
+        padding: 20px;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "img" 
+        "texto";
+    }
+}
+
+/* CSS de contacto */
+.main_contacto{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
